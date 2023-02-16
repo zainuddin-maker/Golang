@@ -25,3 +25,14 @@ https://github.com/StephenGrider/GoCasts
  Answer:
 
  1. `go run main.go`
+
+
+ ![Chat Preview](  https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-003%20-%20go%20cli.png?raw=true)
+
+ different `go build` and `go run` is , go build just compile the program not execute.
+
+ if we run `go build` than we will get `main.exe` so this is an actual executable file that was built out of our source code of main go.
+
+ we can run it by `./main` or `./main.exe`
+
+ 2.
