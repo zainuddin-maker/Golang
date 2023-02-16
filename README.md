@@ -39,4 +39,10 @@ https://github.com/StephenGrider/GoCasts
 
  ![Chat Preview](   https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-008%20-%20what%20package.png?raw=true)
 
+ package can have many related file instide of it ,each file ending with a file extension of GO (.go). the only requirement for every file inside of a package is that the very first line of each file must declare the package that it belongs to.
+
+  ![Chat Preview](    https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-014%20-%20packages.png?raw=true)
+
+
+
 
