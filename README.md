@@ -75,6 +75,13 @@ FMT itself is a kind of a shortened form of the word format.
 
 The FMT library is used to print out a lot af different information specially to the terminal , just to give you a better sense of debugging and stuff like that.
 
+so for example main package could import FMT, but it could also immport in laike calculator or uploader pacakge.
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-010%20-%20many%20imports.png?raw=true)
+
+we can check library in https://pkg.go.dev/
+
+4. Func is short for function inside of go .
 
 
 
