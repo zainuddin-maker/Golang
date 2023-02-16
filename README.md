@@ -102,6 +102,14 @@ deal is get the card from deck.
 
 >note: if we just write `fmt.Println` than vs code automate write `import "fmt"`
 
+how to assignment :
+
+![Chat Preview](
+https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-003%20-%20assignment.png?raw=true)
+
+Go is a statically typed languange .
+
+
 
 
 
