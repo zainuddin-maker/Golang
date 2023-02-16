@@ -84,5 +84,11 @@ we can check library in https://pkg.go.dev/
 4. Func is short for function inside of go .
 
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20func.png?raw=true)
+
+
+
+
+
 
 
