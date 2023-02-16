@@ -86,6 +86,16 @@ we can check library in https://pkg.go.dev/
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20func.png?raw=true)
 
+5. 
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-007%20-%20code.png?raw=true)
+
+---
+
+we will make some project.
+
+
+
 
 
 
