@@ -43,6 +43,17 @@ https://github.com/StephenGrider/GoCasts
 
   ![Chat Preview](    https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-014%20-%20packages.png?raw=true)
 
+  inside of go , there are two different types of packages.
+
+  there is an executable type and a reusable type.
+
+  ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-012%20-%20types%20of%20packages.png?raw=true)
+
+  so how do we know if we are making an executable package or reusable? 
+
+  the word `main` is ued to make executable type package.
+
+
 
 
 
