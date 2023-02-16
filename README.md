@@ -94,6 +94,17 @@ we can check library in https://pkg.go.dev/
 
 we will make some project.
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-000%20-%20cards.png?raw=true)
+
+we make the project in folder `CARDS`
+
+deal is get the card from deck.
+
+>note: if we just write `fmt.Println` than vs code automate write `import "fmt"`
+
+
+
+
 
 
 
