@@ -109,6 +109,16 @@ https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-003%20
 
 Go is a statically typed languange .
 
+![Chat Preview](
+https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-005%20-%20types.png?raw=true)
+
+A dynamically typed languange is one in which you and i , the developers , essentially do not care what values we are assigning to any given varible.
+
+basic go types :
+
+
+
+
 
 
 
