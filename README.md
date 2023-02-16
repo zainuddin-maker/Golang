@@ -62,3 +62,20 @@ https://github.com/StephenGrider/GoCasts
 
 so if we were trying to make some library of reusable code, or if we wanted share with our friend so they can use our code , than we would start using a more specialized package name.
 
+so for summary :
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-008%20-%20packages.png?raw=true)
+
+
+3. `Import FMT `specially means give my package main access to all of the code and all the functonality that is contained inside of this other package called `fmt`.
+
+FMT is the name of standard library package that is included with the go programming language by default.
+
+FMT itself is a kind of a shortened form of the word format.
+
+The FMT library is used to print out a lot af different information specially to the terminal , just to give you a better sense of debugging and stuff like that.
+
+
+
+
+
