@@ -165,3 +165,16 @@ GO has two basic data structures for handling lists of records :
 2. Slice -> An array that can grow or shrink.
 
 whenever we have an array or a slice , every single record inside of it must be of an identical type.
+
+range :
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-006%20-%20range.png?raw=true)
+
+---
+Object Orientation 
+
+Go is not an object oriented programming language.
+
+
+
+
