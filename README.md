@@ -35,4 +35,8 @@ https://github.com/StephenGrider/GoCasts
 
  we can run it by `./main` or `./main.exe`
 
- 2.
+ 2. A package is a collection of common source code files.
+
+ ![Chat Preview](   https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-008%20-%20what%20package.png?raw=true)
+
+
