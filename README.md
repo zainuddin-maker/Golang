@@ -116,6 +116,16 @@ A dynamically typed languange is one in which you and i , the developers , essen
 
 basic go types :
 
+![Chat Preview](
+https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-004%20-%20types.png?raw=true)
+
+we just use colon equal (:=) when we are defining a new variable , if we are reassigning a existing variable we just use equal (=)
+
+varibale can initialize outside function , but cannot assign the value outside function.
+
+for the function :
+
+
 
 
 
