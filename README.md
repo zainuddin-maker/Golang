@@ -54,6 +54,11 @@ https://github.com/StephenGrider/GoCasts
   the word `main` is ued to make executable type package.
 
 
+  ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-013%20-%20compiling.png?raw=true)
 
+  if we used any other name for our package besides Main , it would not spit out an actual excecutable file.
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-013.5%20-%20reusable.png?raw=true)
+
+so if we were trying to make some library of reusable code, or if we wanted share with our friend so they can use our code , than we would start using a more specialized package name.
 
