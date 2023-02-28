@@ -199,9 +199,30 @@ so any varibale of type "deck" now gets access to the print method.
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-009.3%20-%20method%20receiver.png?raw=true)
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-009.2%20-%20more%20receiver.png?raw=true)
+
+
 Make new function `New Deck`
 
+---
+
+## make newDeck() Function
+updated in `deck.go`
+
+whenever yo have some variable that you dont actualyy have to use , we always replace it with an underscore (_).
+
+and run 
+```
+go run main.go deck.go
+```
+
+---
+
+## **Slice Range Syntax**
 
 
 
+---
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-009.3%20-%20method%20receiver.png?raw=true)
 

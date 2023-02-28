@@ -12,9 +12,9 @@ func main() {
 
 	//initialize new array
 
-	cards := deck{"Ace of Diamonds", newCard()}
+	cards :=  newDeck()
 	// append to join array to new value , but make new array
-	cards = append(cards, "six of spades")
+	// cards = append(cards, "six of spades")
 
 	cards.print()
 
@@ -25,8 +25,8 @@ func main() {
 
 }
 
-func newCard() string {
+// func newCard() string {
 
-	return "Five of Diamonds"
+// 	return "Five of Diamonds"
 
-}
+// }
