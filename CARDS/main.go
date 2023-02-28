@@ -1,6 +1,6 @@
 package main
 
-import "fmt"
+// type deck []string
 
 func main() {
 	// var card string = "Ace of Spades"
@@ -11,19 +11,22 @@ func main() {
 	// fmt.Println((card))
 
 	//initialize new array
-	cards := []string{"Ace of Diamonds" , newCard()}
-	// append to join array to new value , but make new array
-	cards = append(cards,"six of spades")
 
-	for i,card := range cards {
-		
-		fmt.Println(i,card)
-	}
+	cards := deck{"Ace of Diamonds", newCard()}
+	// append to join array to new value , but make new array
+	cards = append(cards, "six of spades")
+
+	cards.print()
+
+	// for i, card := range cards {
+
+	// 	fmt.Println(i, card)
+	// }
 
 }
 
-func newCard() string  {
-	
+func newCard() string {
+
 	return "Five of Diamonds"
 
 }

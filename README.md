@@ -175,6 +175,29 @@ Object Orientation
 
 Go is not an object oriented programming language.
 
+if we use dinamic language like python java etc , OO will be right below :
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-002%20-%20oo%20approach.png?raw=true)
+
+if we use golong , OO is like below:
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-003.1%20-%20go%20approach.png?raw=true)
+
+we will makee deck type inside our application ,essentially the same thing as a slice of string , because we are making this extra type , it gives us the ability to create a bunc of custom functions that only work with that deck type.
+
+we will make deck type in deck.go
+
+and run 
+`go run deck.go main.go`
+
+right before the function name of print , is referred to as a receiver.
+so any varibale of type "deck" now gets access to the print method.
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-003.1%20-%20go%20approach.png?raw=true)
+
+Make new function `New Deck`
+
+
 
 
 
