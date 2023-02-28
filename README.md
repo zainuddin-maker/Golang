@@ -190,10 +190,14 @@ we will make deck type in deck.go
 and run 
 `go run deck.go main.go`
 
+---
+
+## Receiver
+
 right before the function name of print , is referred to as a receiver.
 so any varibale of type "deck" now gets access to the print method.
 
-![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-003.1%20-%20go%20approach.png?raw=true)
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-009.3%20-%20method%20receiver.png?raw=true)
 
 Make new function `New Deck`
 
