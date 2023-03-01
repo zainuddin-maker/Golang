@@ -242,6 +242,11 @@ we use package `ioutil` , package `ioutil` implements some I/O utility functions
 func WriteFile(filename string, data []byte, perm fs.FileMode) error
 ```
 
+byteslice :
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-018%20-%20byte%20slice.png?raw=true)
+
+byte slice is , slices like an array ehere every element inside of it corresponds to an ASCII character code.
 
 
 ---
