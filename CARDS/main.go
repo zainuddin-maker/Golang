@@ -16,7 +16,11 @@ func main() {
 	// append to join array to new value , but make new array
 	// cards = append(cards, "six of spades")
 
-	cards.print()
+	// cards.print()
+	  hand, remainingCards := deal(cards,5)
+
+	  hand.print()
+	  remainingCards.print()
 
 	// for i, card := range cards {
 

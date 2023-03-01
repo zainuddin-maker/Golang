@@ -220,9 +220,35 @@ go run main.go deck.go
 
 ## **Slice Range Syntax**
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-014%20-%20slice%20syntax.png?raw=true)
+
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-013%20-%20slice%20syntax.png?raw=true)
+
+make deal() function in `deck.go`
+
+array deck will not change , because slice will make separate array.
+
+---
+
+
+### Make saveToFile() Function
+
+we use package `ioutil` , package `ioutil` implements some I/O utility functions.
+
+```
+func WriteFile(filename string, data []byte, perm fs.FileMode) error
+```
+
 
 
 ---
 
-![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-009.3%20-%20method%20receiver.png?raw=true)
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
+
+
+
+
 
