@@ -264,6 +264,62 @@ if we use writeTOfile() , than new file will be creates same root in main.go , s
 func ReadFile(filename string) ([]byte, error)
 ```
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-018%20-%20error%20handling.png?raw=true)
+
+`nil` is a value in go , which essentially means no value , or this thing has no value .
+
+`package os` in this package there are some functions that are going to work equally well across all those different operating systems.
+
+to Exit the program we use :
+
+```
+func Exit(code int)
+```
+
+>Exit causes the current program to exit with the given status code. Conventionally, code zero indicates success, non-zero an error. The program terminates immediately; deferred functions are not run.
+For portability, the status code should be in the range [0, 125].
+
+because we want ouput as deck type , but the output of `readFile` is byte slice ([]byte) so 
+
+```
+[]byte -> string ->[]string -> deck 
+```
+
+- to make `[]byte` to `string` we use string([]byte type )
+- to make `string` to `[]string` we use :
+
+    ```
+    func Split(s string, sep string) []string
+    ```
+
+    >Split slices s into all substrings separated by sep and returns a slice of the substrings between those separators.
+
+- to make `[]string` to deck we use `deck(s)`
+
+--- 
+
+### **Make shuffle function**
+
+we use `math/rand package` to randomize , and wwe use :
+```
+func Intn(n int) int
+```
+>Intn returns, as an int, a non-negative pseudo-random number in the half-open interval [0,n) from the default Source. It panics if n <= 0.
+
+if we use `rand` package is used seed value , and the seed value is always same , so the random number is same to , so we must change the `seed` value in random generator we use `type Rand` in package rand , so we use :
+
+```
+func New(src Source) *Rand
+```
+>New returns a new Rand that uses random values from src to generate other random values. 
+
+and to make new type source we use :
+
+```
+func NewSource(seed int64) Source
+```
+
+
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
 
 
