@@ -339,6 +339,9 @@ because `seed ` must updat every time , so we can use package `time`
     ```
     go test
     ```
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-023%20-%20tests.png?raw=true)
+
+
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
 
