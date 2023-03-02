@@ -56,16 +56,27 @@ func main() {
 		},
 		// must have coma after value declaration.
 	}
+// with this below function, jim will not update , so we use pointer
+	// jim.updateName(("jimmy"))
+	// jim.print()
 
-	jim.updateName(("jimmy"))
-	jim.print()
+	//jim function work
+	jimPointer := &jim
+	jimPointer.updateName(("jimmy"))
+	 jim.print()
 
 	// fmt.Printf("%+v",jim)
 }
 
 // with this below function, jim will not update , so we use pointer
-func (p person) updateName(newFirstName string)  {
-	p.firstName = newFirstName
+// func (p person) updateName(newFirstName string)  {
+// 	p.firstName = newFirstName
+// }
+
+// this function work
+
+func (pointerToPerson *person) updateName(newFirstName string)  {
+	(*pointerToPerson).firstName = newFirstName
 }
 
 func (p person) print()  {

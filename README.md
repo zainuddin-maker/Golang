@@ -387,8 +387,11 @@ then the struc will give Zero Value :
 ### Pointer
 
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-002%20-%20pointers.png?raw=true)
 
 
+
+---
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
 
 
