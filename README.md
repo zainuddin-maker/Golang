@@ -373,7 +373,10 @@ if we declare struct like :
 var alex person
 ```
 
-then the struc will give Zero Value .
+then the struc will give Zero Value : 
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-014%20-%20declaring%20struct.png?raw=true)
+
 
 
 

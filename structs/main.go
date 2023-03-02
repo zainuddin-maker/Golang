@@ -14,4 +14,13 @@ func main() {
 	// this the corret way
 	// alex := person{firstName: "Alex", lastName: "Anderson"}
 	// fmt.Println((alex))
+
+	// this is another way
+
+	var alex person 
+	alex.firstName = "Alex"
+	alex.lastName = "Anderson"
+	fmt.Println(alex)
+	//%+v sill print out all the different field names and their values from Alex.
+	fmt.Printf("%+v",alex)
 }
