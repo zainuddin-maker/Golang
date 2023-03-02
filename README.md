@@ -442,6 +442,10 @@ this sprogram uses a shortcut , where Go will automatically assume that even tho
 
 ---
 
+### Reference vs Value Types
+
+
+
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
 
