@@ -459,8 +459,37 @@ because value will copying if use in function , than new address will be created
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-020%20-%20slice%20in%20func.png?raw=true)
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-021%20-%20reference%20types.png?raw=true)
+
+case :
+
+if we have code , with multiple `&` passing like :
+
+```go
+package main
+ 
+import "fmt"
+ 
+func main() {
+ name := "bill"
+ 
+ namePointer := &name
+ 
+ fmt.Println(&namePointer)
+ printPointer(namePointer)
+}
+ 
+func printPointer(namePointer *string) {
+ fmt.Println(&namePointer)
+}
+```
+
+then **`The Log statements will print different addresses because *everything* in Go is pass by value`**
+
 
 ---
+
+## **MAPS**
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
 
