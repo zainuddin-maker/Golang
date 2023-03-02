@@ -363,7 +363,18 @@ in `os package`
 
 `Struct` is short for structure , it is a data structure in go . like a collection of different properties that are somehow related together of have some type of common purpose,
 
-in javascript is like objectt
+in javascript is like object.
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-012%20-%20structs.png?raw=true)
+
+if we declare struct like :
+
+```
+var alex person
+```
+
+then the struc will give Zero Value .
+
 
 
 
