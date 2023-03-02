@@ -455,6 +455,10 @@ when we use like `[]string` we get both slice and array .
 
 because value will copying if use in function , than new address will be created.
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-019%20-%20slice%20in%20funcs.png?raw=true)
+
+
+
 ---
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
