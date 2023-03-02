@@ -248,8 +248,21 @@ byteslice :
 
 byte slice is , slices like an array ehere every element inside of it corresponds to an ASCII character code.
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-019%20-%20type%20casting.png?raw=true)
+
+```
+deck -> []string -> string -> []byte
+```
+
+if we use writeTOfile() , than new file will be creates same root in main.go , same name with filename that parsing to filename in function writeToFile()
 
 ---
+
+### **Reading from Harddrive**
+
+```
+func ReadFile(filename string) ([]byte, error)
+```
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
 

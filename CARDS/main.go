@@ -1,5 +1,7 @@
 package main
 
+// import "fmt"
+
 // type deck []string
 
 func main() {
@@ -12,20 +14,28 @@ func main() {
 
 	//initialize new array
 
-	cards :=  newDeck()
-	// append to join array to new value , but make new array
-	// cards = append(cards, "six of spades")
+	// cards :=  newDeck()
+	// // append to join array to new value , but make new array
+	// // cards = append(cards, "six of spades")
 
-	// cards.print()
-	  hand, remainingCards := deal(cards,5)
+	// // cards.print()
+	//   hand, remainingCards := deal(cards,5)
 
-	  hand.print()
-	  remainingCards.print()
+	//   hand.print()
+	//   remainingCards.print()
 
 	// for i, card := range cards {
 
 	// 	fmt.Println(i, card)
 	// }
+
+	// greeting := "Hi there!"
+
+	// fmt.Println([]byte(greeting))
+
+	cards := newDeck()
+	cards.saveToFile("my_cards")
+	// fmt.Println(cards.toString())
 
 }
 
