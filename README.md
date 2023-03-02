@@ -341,6 +341,30 @@ because `seed ` must updat every time , so we can use package `time`
     ```
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-023%20-%20tests.png?raw=true)
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-024%20-%20tests.png?raw=true)
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-025%20-%20more%20tests.png?raw=true)
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-026%20-%20save%20and%20load.png?raw=true)
+
+to remove file we use : 
+
+```
+func Remove(name string) error
+```
+>Remove removes the named file or (empty) directory. If there is an error, it will be of type *PathError.
+
+in `os package`
+
+---
+
+## Organizing Data With Structs
+
+
+`Struct` is short for structure , it is a data structure in go . like a collection of different properties that are somehow related together of have some type of common purpose,
+
+in javascript is like objectt
+
 
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)

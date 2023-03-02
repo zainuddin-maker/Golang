@@ -24,7 +24,7 @@ func newDeck() deck {
 
 		for _, value := range cardValues {
 
-			cards = append(cards, suit+" of "+value)
+			cards = append(cards, value+" of "+suit)
 		}
 
 	}
@@ -77,7 +77,7 @@ func newDeckFromFile(filename string) deck {
 func (d deck) shuffle() {
 
 	source := rand.NewSource(time.Now().UnixNano())
-	// seed 
+	// seed
 
 	r := rand.New(source)
 
