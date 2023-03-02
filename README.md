@@ -391,6 +391,52 @@ then the struc will give Zero Value :
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-006%20-%20ref%20land.png?raw=true)
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-006%20-%20operator.png?raw=true)
+
+> note : if we use slice that struct , we diddnt using pointer .
+
+example :
+```
+func main(){
+    mySlice := []string {"Hi"}
+    updateSlice(mySlice)
+    fmt.Println(mySlice)
+}
+
+func updateSlice (s []string){
+    s[0] = "Bye"
+}
+```
+
+in example : 
+```
+package main
+ 
+import "fmt"
+ 
+type location struct {
+ longitude float64
+ latitude float64
+}
+ 
+func main() {
+ newYork := location{
+   latitude: 40.73,
+   longitude: -73.93,
+ }
+ 
+ newYork.changeLatitude()
+ 
+ fmt.Println(newYork)
+}
+ 
+func (lo *location) changeLatitude() {
+ (*lo).latitude = 41.0
+}
+```
+
+this sprogram uses a shortcut , where Go will automatically assume that even though `newYork.changeLatitude()` is using a value type we probably meant to pass in a pointer to the newYork struct 
+
 
 
 
