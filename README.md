@@ -449,7 +449,7 @@ this sprogram uses a shortcut , where Go will automatically assume that even tho
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-017%20-%20arrays.png?raw=true)
 
 
-when we use like `[]string` we get both slice and array .
+when we use like `[]string` we get both slice (data struktur (pointer to head ,capasity ,length )) and array .
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-018%20-%20slices.png?raw=true)
 
@@ -457,6 +457,7 @@ because value will copying if use in function , than new address will be created
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-019%20-%20slice%20in%20funcs.png?raw=true)
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-020%20-%20slice%20in%20func.png?raw=true)
 
 
 ---
