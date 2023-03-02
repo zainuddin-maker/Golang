@@ -306,6 +306,10 @@ func Intn(n int) int
 ```
 >Intn returns, as an int, a non-negative pseudo-random number in the half-open interval [0,n) from the default Source. It panics if n <= 0.
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-021%20-%20psuedorandom.png?raw=true)
+
+
+
 if we use `rand` package is used seed value , and the seed value is always same , so the random number is same to , so we must change the `seed` value in random generator we use `type Rand` in package rand , so we use :
 
 ```
@@ -319,6 +323,22 @@ and to make new type source we use :
 func NewSource(seed int64) Source
 ```
 
+because `seed ` must updat every time , so we can use package `time`
+
+
+---
+
+### **Testing with GO**
+
+- Go testing is not RSpec, mocha,jasmine,selenium,etc! , we just use very small interface or very small set of functions to help us actually test our code.
+
+- To make a test , create a new file ending in _test.go
+    example : `desctest.go`
+
+- To run all tests in a package, run the command :
+    ```
+    go test
+    ```
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
 
