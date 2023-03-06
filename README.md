@@ -497,6 +497,7 @@ then **`The Log statements will print different addresses because *everything* i
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-002%20-%20other%20lang.png?raw=true)
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-005%20-%20syntax1.png?raw=true)
 
 
 ---
