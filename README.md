@@ -616,6 +616,10 @@ Understand how to read interfaces in the standard lib. Writing your own interfac
 
 - same output if we use Copy
 
+    ```Golang
+    io.Copy(os.Stdout,resp.Body)
+    ```
+
 - there is some opposite   function of Read :
 
     ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-011%20-%20writer.png?raw=true)
@@ -626,7 +630,15 @@ Understand how to read interfaces in the standard lib. Writing your own interfac
     func Copy(dst Writer, src Reader) (written int64, err error)
     ```
 
+    ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-020%20-%20iocopy.png?raw=true)
+
+- Make custom Writer 
+
 
 ---
+
+## Channels and Go routine
+
+
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
