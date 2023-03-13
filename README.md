@@ -616,7 +616,16 @@ Understand how to read interfaces in the standard lib. Writing your own interfac
 
 - same output if we use Copy
 
-there is some opposite function of Read :
+- there is some opposite   function of Read :
+
+    ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-011%20-%20writer.png?raw=true)
+
+    `func Copy` :
+
+    ```Golang
+    func Copy(dst Writer, src Reader) (written int64, err error)
+    ```
+
 
 ---
 
