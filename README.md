@@ -641,4 +641,9 @@ Understand how to read interfaces in the standard lib. Writing your own interfac
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-001%20-%20status.png?raw=true)
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-002%20-%20flow.png?raw=true)
+
+we can make program paralel :
+
+
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
