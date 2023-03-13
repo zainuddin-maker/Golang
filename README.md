@@ -602,7 +602,22 @@ Understand how to read interfaces in the standard lib. Writing your own interfac
 
 - we can use the reader interface to solve this issue of all this different type of data coming from all.
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20reader.png?raw=true)
+
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-016%20-%20reader.png?raw=true)
+
+- Read function 
+
+    ```Golang
+        bs := make([]byte,99999)
+        resp.Body.Read(bs)
+        fmt.Println(string(bs))
+    ```
+
+- same output if we use Copy
+
+there is some opposite function of Read :
+
 ---
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
