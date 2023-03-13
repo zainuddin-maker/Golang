@@ -101,7 +101,9 @@ we make the project in folder `CARDS`
 deal is get the card from deck.
 
 > note: if we just write `fmt.Println` than vs code automate write `import "fmt"`
+
 ---
+
 how to assignment :
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-003%20-%20assignment.png?raw=true)
@@ -115,6 +117,7 @@ Go is a statically typed languange .
 A dynamically typed languange is one in which you and i , the developers , essentially do not care what values we are assigning to any given varible.
 
 ---
+
 basic go types :
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-004%20-%20types.png?raw=true)
@@ -124,6 +127,7 @@ we just use colon equal (:=) when we are defining a new variable , if we are rea
 varibale can initialize outside function , but cannot assign the value outside function.
 
 ---
+
 for the function :
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-007%20-%20func.png?raw=true)
@@ -171,7 +175,8 @@ range :
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-006%20-%20range.png?raw=true)
 
 ---
-Object Orientation 
+
+Object Orientation
 
 Go is not an object oriented programming language.
 
@@ -187,7 +192,7 @@ we will makee deck type inside our application ,essentially the same thing as a 
 
 we will make deck type in deck.go
 
-and run 
+and run
 `go run deck.go main.go`
 
 ---
@@ -201,17 +206,18 @@ so any varibale of type "deck" now gets access to the print method.
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-009.2%20-%20more%20receiver.png?raw=true)
 
-
 Make new function `New Deck`
 
 ---
 
 ## make newDeck() Function
+
 updated in `deck.go`
 
-whenever yo have some variable that you dont actualyy have to use , we always replace it with an underscore (_).
+whenever yo have some variable that you dont actualyy have to use , we always replace it with an underscore (\_).
 
-and run 
+and run
+
 ```
 go run main.go deck.go
 ```
@@ -222,7 +228,6 @@ go run main.go deck.go
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-014%20-%20slice%20syntax.png?raw=true)
 
-
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-013%20-%20slice%20syntax.png?raw=true)
@@ -232,7 +237,6 @@ make deal() function in `deck.go`
 array deck will not change , because slice will make separate array.
 
 ---
-
 
 ### Make saveToFile() Function
 
@@ -276,46 +280,47 @@ to Exit the program we use :
 func Exit(code int)
 ```
 
->Exit causes the current program to exit with the given status code. Conventionally, code zero indicates success, non-zero an error. The program terminates immediately; deferred functions are not run.
-For portability, the status code should be in the range [0, 125].
+> Exit causes the current program to exit with the given status code. Conventionally, code zero indicates success, non-zero an error. The program terminates immediately; deferred functions are not run.
+> For portability, the status code should be in the range [0, 125].
 
-because we want ouput as deck type , but the output of `readFile` is byte slice ([]byte) so 
+because we want ouput as deck type , but the output of `readFile` is byte slice ([]byte) so
 
 ```
-[]byte -> string ->[]string -> deck 
+[]byte -> string ->[]string -> deck
 ```
 
-- to make `[]byte` to `string` we use string([]byte type )
-- to make `string` to `[]string` we use :
+-   to make `[]byte` to `string` we use string([]byte type )
+-   to make `string` to `[]string` we use :
 
     ```
     func Split(s string, sep string) []string
     ```
 
-    >Split slices s into all substrings separated by sep and returns a slice of the substrings between those separators.
+    > Split slices s into all substrings separated by sep and returns a slice of the substrings between those separators.
 
-- to make `[]string` to deck we use `deck(s)`
+-   to make `[]string` to deck we use `deck(s)`
 
---- 
+---
 
 ### **Make shuffle function**
 
 we use `math/rand package` to randomize , and wwe use :
+
 ```
 func Intn(n int) int
 ```
->Intn returns, as an int, a non-negative pseudo-random number in the half-open interval [0,n) from the default Source. It panics if n <= 0.
+
+> Intn returns, as an int, a non-negative pseudo-random number in the half-open interval [0,n) from the default Source. It panics if n <= 0.
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-021%20-%20psuedorandom.png?raw=true)
-
-
 
 if we use `rand` package is used seed value , and the seed value is always same , so the random number is same to , so we must change the `seed` value in random generator we use `type Rand` in package rand , so we use :
 
 ```
 func New(src Source) *Rand
 ```
->New returns a new Rand that uses random values from src to generate other random values. 
+
+> New returns a new Rand that uses random values from src to generate other random values.
 
 and to make new type source we use :
 
@@ -325,21 +330,19 @@ func NewSource(seed int64) Source
 
 because `seed ` must updat every time , so we can use package `time`
 
-
 ---
 
 ### **Testing with GO**
 
-- Go testing is not RSpec, mocha,jasmine,selenium,etc! , we just use very small interface or very small set of functions to help us actually test our code.
+-   Go testing is not RSpec, mocha,jasmine,selenium,etc! , we just use very small interface or very small set of functions to help us actually test our code.
 
-- To make a test , create a new file ending in _test.go
+-   To make a test , create a new file ending in \_test.go
     example : `desctest.go`
 
-- To run all tests in a package, run the command :
-    ```
-    go test
-    ```
-![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-023%20-%20tests.png?raw=true)
+-   To run all tests in a package, run the command :
+    `    go test
+   `
+    ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-023%20-%20tests.png?raw=true)
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-024%20-%20tests.png?raw=true)
 
@@ -347,19 +350,19 @@ because `seed ` must updat every time , so we can use package `time`
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-026%20-%20save%20and%20load.png?raw=true)
 
-to remove file we use : 
+to remove file we use :
 
 ```
 func Remove(name string) error
 ```
->Remove removes the named file or (empty) directory. If there is an error, it will be of type *PathError.
+
+> Remove removes the named file or (empty) directory. If there is an error, it will be of type \*PathError.
 
 in `os package`
 
 ---
 
 ## Organizing Data With Structs
-
 
 `Struct` is short for structure , it is a data structure in go . like a collection of different properties that are somehow related together of have some type of common purpose,
 
@@ -373,19 +376,19 @@ if we declare struct like :
 var alex person
 ```
 
-then the struc will give Zero Value : 
+then the struc will give Zero Value :
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-014%20-%20declaring%20struct.png?raw=true)
 
 ---
+
 ### Embeddeding Struct
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-015%20-%20nesting.png?raw=true)
 
-
 ---
-### Pointer
 
+### Pointer
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-002%20-%20pointers.png?raw=true)
 
@@ -396,6 +399,7 @@ then the struc will give Zero Value :
 > note : if we use slice that struct , we diddnt using pointer .
 
 example :
+
 ```
 func main(){
     mySlice := []string {"Hi"}
@@ -408,46 +412,41 @@ func updateSlice (s []string){
 }
 ```
 
-in example : 
+in example :
+
 ```
 package main
- 
+
 import "fmt"
- 
+
 type location struct {
  longitude float64
  latitude float64
 }
- 
+
 func main() {
  newYork := location{
    latitude: 40.73,
    longitude: -73.93,
  }
- 
+
  newYork.changeLatitude()
- 
+
  fmt.Println(newYork)
 }
- 
+
 func (lo *location) changeLatitude() {
  (*lo).latitude = 41.0
 }
 ```
 
-this sprogram uses a shortcut , where Go will automatically assume that even though `newYork.changeLatitude()` is using a value type we probably meant to pass in a pointer to the newYork struct 
-
-
-
+this sprogram uses a shortcut , where Go will automatically assume that even though `newYork.changeLatitude()` is using a value type we probably meant to pass in a pointer to the newYork struct
 
 ---
 
 ### Reference vs Value Types
 
-
-
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-017%20-%20arrays.png?raw=true)
-
 
 when we use like `[]string` we get both slice (data struktur (pointer to head ,capasity ,length )) and array .
 
@@ -467,18 +466,18 @@ if we have code , with multiple `&` passing like :
 
 ```go
 package main
- 
+
 import "fmt"
- 
+
 func main() {
  name := "bill"
- 
+
  namePointer := &name
- 
+
  fmt.Println(&namePointer)
  printPointer(namePointer)
 }
- 
+
 func printPointer(namePointer *string) {
  fmt.Println(&namePointer)
 }
@@ -486,25 +485,122 @@ func printPointer(namePointer *string) {
 
 then **`The Log statements will print different addresses because *everything* in Go is pass by value`**
 
-
 ---
 
 ## **MAPS**
 
-
+struktur of map :
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-003%20-%20typed.png?raw=true)
 
+map in language :
+
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-002%20-%20other%20lang.png?raw=true)
+
+Iteratings over Maps:
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-005%20-%20syntax1.png?raw=true)
 
+Differences Between Maps and Structs :
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/Untitled%20Diagram-004%20-%20map%20vs%20struct.png?raw=true)
 
 ---
 
+# **Interface**
+
+reuse function with different type.
+
+```
+type bot interface
+```
+
+Our program has a new type called `bot`
+
+```
+getGreeting() string
+```
+
+if in prgoram there is function called `getGreeting` and you return a string then you are now an honorary member of type `bot` ,now that youre also an honoray member of type `bot` you can now call this function called `printGreeting`
+
+```golang
+func printGreeting(b bot){
+
+}
+```
+
+> we use interfaces to define a method set or a function set ,defining what something of type, but what different functions and return types it should.
+
+how to make new interface :
+
+```golang
+
+type bot interface {
+    getGreeting(string, int) (string, error)
+}
+```
+
+there are :
+
+-   interface name
+-   Function name
+-   List of argument types
+-   List of return types.
+
+there are two different type :
+
+-   Concrete Type (map ,struct ,int ,string ,englishBot)
+-   Interface Type
+
+`concrete type ` is we can create a value using each of them.
+
+fact about interface :
+
+-   Interfaces are not generic types
+
+    > A generic type is a generic class or interface that is parameterized over types.Essentially, generic types allow you to write a general, generic class (or method) that works with different types, allowing for code re-use.
+
+-   Interfaces are 'implicit'
+    We dont manually have to say that our custom type satisfies some interface. some how go just connecting that , but if we want to know the connection , is very chalengging because we must manually search the connection .
+
+-   Interfaces are a contract to help us manage types.
+    Garbage In -> Garbage Out (GIGO). if our custom types implementation of a function is broken then interfaces wont help us!
+
+-   Interfaces are tough. setp #1 is understanding how to read them.
+
+Understand how to read interfaces in the standard lib. Writing your own interfaces is tough and requires experience
+
+### **Make simple program : HTTP request to google.com and print he response to terminal.**
+
+-   we use `net/http` package ,Package http provides HTTP client and server implementations. we use `request/get
+
+- response from http.get is different from other languange.
+
+-  the response is in struct , and if scroll down there is a Body io.ReadCloser
+
+- type ReadCloser 
+    ```
+    type ReadCloser interface {
+        Reader
+        Closer
+    }
+    ```
+- type Reader , Reader is the interface that wraps the basic Read method.
+    ```
+    type Reader interface {
+        Read(p []byte) (n int, err error)
+    }
+    ```
+- type Closer , Closer is the interface that wraps the basic Close method.
+    ```
+    type Closer interface {
+        Close() error
+    }
+    ```
+
+- in Go we can take multiple interfaces, so different interfaces and assemble them together to form another interface.
+
+- we can use the reader interface to solve this issue of all this different type of data coming from all.
+---
+
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
-
-
-
-
-
