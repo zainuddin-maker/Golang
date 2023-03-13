@@ -655,4 +655,14 @@ Go rooutine takes every line of code inside of our program and executes them one
 
 when we use the go keyword, it means run this function inside of a brand new go routine.
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-007%20-%20scheduler.png?raw=true)
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-010%20-%20multiple%20threads.png?raw=true)
+
+### **Concurency vs Paralelisme**
+
+when we say something is concurrent, we are simply sayaing that our program has the ability to run different things kind of at the same time , but not really at the same time.
+
+
+
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
