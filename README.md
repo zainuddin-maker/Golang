@@ -651,4 +651,8 @@ we can make program paralel :
 
 Go rooutine takes every line of code inside of our program and executes them one by one.
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-006%20-%20goroutine.png?raw=true)
+
+when we use the go keyword, it means run this function inside of a brand new go routine.
+
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
