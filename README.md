@@ -681,6 +681,14 @@ Channel :
 - using channel to comunicate between go routine.
 - channel is type so value that we send throug a channel must be always of the same type .
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-018%20-%20blocking%20channel.png?raw=true)
+
+**`BUT`** if we just at scema like above, we just get 1 log like : 
+```
+http://google.com is up!
+Yep its up
+```
+
 
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
