@@ -663,6 +663,13 @@ when we use the go keyword, it means run this function inside of a brand new go 
 
 when we say something is concurrent, we are simply sayaing that our program has the ability to run different things kind of at the same time , but not really at the same time.
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-014%20-%20concurrency%20vs%20parallelism.png?raw=true)
+
+# VS
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20parallelism.png?raw=true)
+
+
+
 
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
