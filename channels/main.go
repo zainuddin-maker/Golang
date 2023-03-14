@@ -7,11 +7,12 @@ import (
 
 func main() {
 	links := []string{
-		"http://google.com",
+		
 		"http://facebook.com",
 		"http://stackoverflow.com",
 		"http://golang.org",
 		"http://amazon.com",
+		"http://google.com",
 	}
 
 	//case 2 add channel
@@ -25,6 +26,8 @@ func main() {
 	}
 	//case 2 add channel
 	fmt.Println(<-c)
+	fmt.Println(<-c)
+
 }
 	//case 2 add channel
 func checkLink(link string, c chan string) {

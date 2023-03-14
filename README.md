@@ -689,6 +689,25 @@ http://google.com is up!
 Yep its up
 ```
 
+that because , affter google is done to fetch api , then the last function in main routine will be trigger , and main routine done with his code.
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-020%20-%20timeline.png?raw=true)
+
+but if we add another 
+```golang
+fmt.Println(<-c)
+```
+
+the the outuput will be : 
+```
+http://google.com is up!
+Yep its up
+http://stackoverflow.com is up!
+Yep its up
+```
+that because :
+
+
 
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
