@@ -707,6 +707,9 @@ Yep its up
 ```
 that because :
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-021%20-%20multiple%20receives.png?raw=true)
+
+the main routine will sleep and waiting for channel to send to main routine from go routine , and that make we can waiting for fetch api. main routine sleep because that value coming throguh channel is a blocing call.
 
 
 

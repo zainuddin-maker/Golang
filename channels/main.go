@@ -25,8 +25,12 @@ func main() {
 	 go	checkLink(link,c)
 	}
 	//case 2 add channel
-	fmt.Println(<-c)
-	fmt.Println(<-c)
+	// fmt.Println(<-c)
+	// fmt.Println(<-c)
+
+	for i := 0; i < len(links); i++ {
+		fmt.Println(<-c)
+	}
 
 }
 	//case 2 add channel
