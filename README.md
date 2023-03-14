@@ -672,8 +672,14 @@ when we say something is concurrent, we are simply sayaing that our program has 
 
 if we run just use `go` keyword , the program will be exit , because in some point after looping and make go routine , main routine like : "oh i guess theres noting else "
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-014%20-%20early%20exit.png?raw=true
+)
 
+so we use channels , channels are used to communicate in between different running go routines , we use channel to make sure that the amin routine is aware of when each of these child . comunication between go routine **`JUST`** using Channel. Channel is type , so we can make it as string , int etc
 
+Channel :
+- using channel to comunicate between go routine.
+- channel is type so value that we send throug a channel must be always of the same type .
 
 
 
