@@ -711,6 +711,24 @@ that because :
 
 the main routine will sleep and waiting for channel to send to main routine from go routine , and that make we can waiting for fetch api. main routine sleep because that value coming throguh channel is a blocing call.
 
+## Eternal Fetch
+
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-022%20-%20eternal%20fetch.png?raw=true)
+
+so we will add pause using `time` package with func `sleep`
+
+```
+func Sleep(d Duration)
+```
+
+>Sleep pauses the current goroutine for at least the duration d. A negative or zero duration causes Sleep to return immediately.
+
+but not best practise so we use function literal .
+function literal is an unnamed function that we use to wrap some litte chunk of code .
+
+there is some warning 
+`variable l capture by func literal`
+
 
 
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20slice%20selection.png?raw=true)
