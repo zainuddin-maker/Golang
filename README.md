@@ -668,6 +668,11 @@ when we say something is concurrent, we are simply sayaing that our program has 
 # VS
 ![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-015%20-%20parallelism.png?raw=true)
 
+![Chat Preview](https://github.com/zainuddin-maker/Golang/blob/master/imgdiagram/diagrams-009%20-%20threads.png?raw=true)
+
+if we run just use `go` keyword , the program will be exit , because in some point after looping and make go routine , main routine like : "oh i guess theres noting else "
+
+
 
 
 
